@@ -1,3 +1,3 @@
 # Network_Digital_Twins
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Image.jpg)
