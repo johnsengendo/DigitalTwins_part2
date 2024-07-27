@@ -13,4 +13,5 @@ Repository Structure
 - analysis/: Scripts and notebooks for analyzing pcap files.
 - predictions/: Predictive models and scripts for traffic prediction.
 - digital_twin/: Implementation of the digital twin replication.
+  
 ![alt text](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Image.jpg)
