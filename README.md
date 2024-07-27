@@ -6,10 +6,10 @@ Overview
 
 Our process involves the following steps:
 
-    Generating the Pickup File: Utilize the pickup file obtained from the video stream from Repository X.
-    Analyzing the Pickup File: Analyze the generated pickup file to extract meaningful data.
-    Predicting Traffic: Perform traffic predictions based on the analyzed pickup file data.
-    Replicating in a Digital Twin: Apply the predictions to a networked digital twin to generate another pickup file, ensuring it collaborates with the original pickup file.
+    -Generating the Pickup File: Utilize the pickup file obtained from the video stream from Repository X.
+    -Analyzing the Pickup File: Analyze the generated pickup file to extract meaningful data.
+    -Predicting Traffic: Perform traffic predictions based on the analyzed pickup file data.
+    -Replicating in a Digital Twin: Apply the predictions to a networked digital twin to generate another pickup file, ensuring it collaborates with the original pickup file.
 
 Process Flow
 
