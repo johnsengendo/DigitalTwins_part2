@@ -1,14 +1,13 @@
 # Network_Digital_Twins
 Digital Twin Replication
 
-This repository extends Repository X and Repository Y, where we aim to replicate a pickup file into a digital twin.
-Overview
+This repository extends Repository X and Repository Y, where we aim to replicate a pcap file into a digital twin.
 
-Our process involves the following steps:
-- Generating the Pickup File: Utilize the pickup file obtained from the video stream from Repository X.
-- Analyzing the Pickup File: Analyze the generated pickup file to extract meaningful data.
-- Predicting Traffic: Perform traffic predictions based on the analyzed pickup file data.
-- Replicating in a Digital Twin: Apply the predictions to a networked digital twin to generate another pickup file, ensuring it collaborates with the original pickup file.
+The process involves the following steps:
+- Generating the Pcap file.
+- Analyzing the Pcap file to extract meaningful data.
+- Predicting Traffic: Performing traffic predictions based on the analyzed pcap file data.
+- Replicating in a Digital Twin: Applying the predictions to a networked digital twin to generate another pcap file, in coloration with the original pcap file.
 
 Process Flow
 
