@@ -1,7 +1,7 @@
 # Network_Digital_Twins
 Digital Twin Replication
 
-This repository extends Repository X and Repository Y, where we aim to replicate a pcap file into a digital twin.
+This repository extends Repository ![alt text](https://github.com/johnsengendo/Video_server) and Repository Y, where we aim to replicate a pcap file into a digital twin.
 
 The process involves the following steps:
 - Generating the Pcap file.
