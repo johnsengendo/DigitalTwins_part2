@@ -5,7 +5,7 @@ The process involves the following steps:
 - Generating the Pcap file.
 - Analyzing the Pcap file to extract meaningful data.
 - Predicting Traffic: Performing traffic predictions based on the analyzed pcap file data.
-- Replicating in a Digital Twin: Applying the predictions to a networked digital twin to generate another pcap file, in coloration with the original pcap file.
+- Replicating in a Digital Twin: Applying the predictions to a digital twin to generate another pcap file, in coloration with the original pcap file.
 
 Repository Structure
 
