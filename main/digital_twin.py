@@ -1,14 +1,14 @@
 import pandas as pd
 import time
-from comnetsemu.net import Containernet
-from comnetsemu.node import Host
-from comnetsemu.link import TCLink
+from mininet.net import Mininet
+from mininet.node import OVSSwitch
+from mininet.link import Link
 from mininet.log import setLogLevel, info
 from mininet.cli import CLI
 import os
 
 # Loading the CSV data
-csv_file = "your_csv_file.csv"  # Replace with your actual CSV file name
+csv_file = "predictions_with_bandwidth.csv"
 
 # Ensuring the script and CSV file are in the same directory
 current_directory = os.path.dirname(os.path.abspath(__file__))
@@ -17,11 +17,11 @@ csv_path = os.path.join(current_directory, csv_file)
 # Loading the CSV data
 data = pd.read_csv(csv_path)
 
-# Setting up the Comnetsemu network
+# Setting up the Mininet network
 setLogLevel("info")
 
 # Creating a network
-net = Containernet()
+net = Mininet(switch=OVSSwitch)
 
 # Adding two switches
 s1 = net.addSwitch("s1")
@@ -32,12 +32,20 @@ h1 = net.addHost("h1", ip="10.0.0.1/24")
 h2 = net.addHost("h2", ip="10.0.0.2/24")
 
 # Adding links between the hosts and the switches
-net.addLink(h1, s1, cls=TCLink, bw=10)  # 10 Mbps link
-net.addLink(s1, s2, cls=TCLink, bw=10)  # 10 Mbps link
-net.addLink(s2, h2, cls=TCLink, bw=10)  # 10 Mbps link
+net.addLink(h1, s1)
+net.addLink(s1, s2)
+net.addLink(s2, h2)
 
 # Starting the network
 net.start()
+
+# Setting bandwidth limits using tc
+h1.cmd("tc qdisc add dev h1-eth0 root tbf rate 10Mbit burst 15k latency 1ms")
+s1.cmd("tc qdisc add dev s1-eth1 root tbf rate 10Mbit burst 15k latency 1ms")
+s1.cmd("tc qdisc add dev s1-eth2 root tbf rate 10Mbit burst 15k latency 1ms")
+s2.cmd("tc qdisc add dev s2-eth1 root tbf rate 10Mbit burst 15k latency 1ms")
+s2.cmd("tc qdisc add dev s2-eth2 root tbf rate 10Mbit burst 15k latency 1ms")
+h2.cmd("tc qdisc add dev h2-eth0 root tbf rate 10Mbit burst 15k latency 1ms")
 
 # Defining the pcap file path in the same directory as the script
 pcap_file = os.path.join(current_directory, "h1_capture.pcap")
