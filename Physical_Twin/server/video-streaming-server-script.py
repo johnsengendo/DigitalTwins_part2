@@ -17,7 +17,7 @@ def stop_capture(pid):
         print(f"Error stopping capture: {e}")
 
 def main():
-    input_file = "video/Deadpool.mp4"
+    input_file = "Video/Deadpool.mp4"
     loops_number = -1  # Stream the video indefinitely
     total_duration = 15 * 120  # 15 periods of 120 seconds each
     capture_traffic = True
