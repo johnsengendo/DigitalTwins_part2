@@ -13,10 +13,10 @@ RUN chmod +x /home/install_packages.sh
 # Executing the install_packages.sh script to install necessary packages
 RUN /home/install_packages.sh
 
-# Copying the video streaming script into the docker image
+# Copying the video streaming server script into the docker image
 COPY video-streaming-server-script.py /home/
 
-# Changing the permissions of the video streaming script to make it executable
+# Giving permissions to the video streaming script server to make it executable
 RUN chmod +x /home/video-streaming-server-script.py
 
 # Copying the sample video into the docker image
