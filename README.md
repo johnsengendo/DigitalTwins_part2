@@ -13,5 +13,11 @@ Repository structure:
 - analysis/: Scripts and notebooks for analyzing pcap files.
 - predictions/: Predictive models and scripts for traffic prediction.
 - digital_twin/: Implementation of the digital twin replication.
-  
+- 
+  ### Time-Series Prediction with CNN
+
+This script leverages Convolutional Neural Networks (CNNs) for predicting time-series data, specifically focusing on packet-per-second metrics.  
+It preprocesses the data, trains multiple models with different window sizes and forecast horizons, and visualizes the results.  
+Key dependencies include `TensorFlow`, `Keras`, and `Scikit-learn`.
+
 ![alt text](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Image.jpg)
