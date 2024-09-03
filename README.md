@@ -14,7 +14,7 @@ Repository structure:
 - predictions/: Predictive models and scripts for traffic prediction.
 - digital_twin/: Implementation of the digital twin replication.
 - 
-  ### Time-Series Prediction with CNN
+### Time-Series Prediction with CNN
 
 This script [time_series_cnn_prediction](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/predictions/time_series_cnn_prediction.py)leverages Convolutional Neural Networks (CNNs) for predicting time-series data, specifically focusing on packet-per-second metrics.  
 It preprocesses the data, trains multiple models with different window sizes and forecast horizons, and visualizes the results.  
