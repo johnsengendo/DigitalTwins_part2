@@ -26,7 +26,7 @@ The [topology script](https://github.com/johnsengendo/DigitalTwins_part2/blob/ma
 
 Key Features:
 - **Dynamic network simulation:** Adjusts bandwidth and delay to create variability in the network and as well to collect more data. Below is a table of different parameters used:
-[data](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Screenshot%202024-09-04%20103539.png)
+![data](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Screenshot%202024-09-04%20103539.png)
 - **Automated Testing:** Option to enable autotest mode for automated topology testing.
 - **Integration with Mininet:** Utilizes Mininet and ComNetsEmu for network simulation and container management.
 
