@@ -29,4 +29,15 @@ Key Features:
 - **Automated Testing:** Option to enable autotest mode for automated topology testing.
 - **Integration with Mininet:** Utilizes Mininet and ComNetsEmu for network simulation and container management.
 
+## Digital Twin Network simulation
+
+The [Digital_Twin](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Digital_Twin/digital_twin.py) emulates a "digital twin" network that mirrors the traffic patterns observed in a physical twin.
+
+### Overview:
+- **Physical twin data integration**: Traffic data captured from a physical twin is analysed and stored in a CSV file (`predictions_with_bandwidth.csv`). This data reflects the trasferred packets/Second in the physical twin.
+- **Digital twin setup**: The script sets up a Mininet-based "digital twin" that replicates the physical twin's network environment. The topology includes two hosts connected by two switches, designed to mirror the network infrastructure of the physical twin.
+- **Traffic emulation**: The captured network traffic from the physical train is replayed in the digital twin network.
+- **Traffic capture and analysis**: Network traffic in the digital twin is captured using `tcpdump` and saved to a pcap file. This allows for a detailed comparison and analysis of how closely the digital twin replicates the physical twin's network behavior.
+
+
 ![alt text](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Image.jpg)
