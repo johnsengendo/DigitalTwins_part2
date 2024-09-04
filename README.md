@@ -30,7 +30,10 @@ Key Features:
 - **Automated testing:** Option to enable autotest mode for automated topology testing.
 - **Integration with Mininet:** Utilizes Mininet and ComNetsEmu for network simulation and container management.
 - Pcap_file captured
+![data](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Screenshot%202024-09-04%20112810.png)
+
 - Extracted features from the Pcap_file
+![data](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Screenshot%202024-09-04%20113955.png)
 
 ## Digital Twin Network simulation.
 
