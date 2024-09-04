@@ -25,7 +25,7 @@ Key dependencies include `TensorFlow`, `Keras`, and `Scikit-learn`.
 The [topology script](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Physical_Twin/network-topology-script.py)  sets up a video streaming application using Mininet and Containernet, simulating dynamic network conditions by varying bandwidth and delay in real-time. The setup includes server and client containers for video streaming, with network properties changing every 120 seconds. The script supports automatic testing and can be controlled via command-line arguments.
 
 Key Features:
-- **Dynamic Network Simulation:** Adjusts bandwidth and delay across a simulated link.
+- **Dynamic network simulation:** Adjusts bandwidth and delay to create variability in the network and as well to collect more data. Below is a table of different parameters used:
 - **Automated Testing:** Option to enable autotest mode for automated topology testing.
 - **Integration with Mininet:** Utilizes Mininet and ComNetsEmu for network simulation and container management.
 
