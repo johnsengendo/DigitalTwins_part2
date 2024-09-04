@@ -1,4 +1,4 @@
-# Network_Digital_Twins part II
+# Network_Digital_Twins part II.
 This repository extends Repository [Video_server](https://github.com/johnsengendo/Video_server) and [Web_server](https://github.com/johnsengendo/Web_server), where we aim to replicate a pcap file into a digital twin.
 
 The process involves the following steps:
@@ -20,7 +20,7 @@ The script [time_series_cnn_prediction](https://github.com/johnsengendo/DigitalT
 It preprocesses the data, trains multiple models with different window sizes and forecast horizons, and visualizes the results.  
 Key dependencies include `TensorFlow`, `Keras`, and `Scikit-learn`.
 
-## Pysical Twin with Video Streaming application with Dynamic Network conditions
+## Pysical Twin with Video Streaming application with Dynamic Network conditions.
 
 The [topology script](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Physical_Twin/network-topology-script.py)  sets up a video streaming application using Mininet and Containernet, simulating dynamic network conditions by varying bandwidth and delay in real-time. The setup includes server and client containers for video streaming, with network properties changing every 120 seconds. The script supports automatic testing and can be controlled via command-line arguments.
 
@@ -29,7 +29,7 @@ Key Features:
 - **Automated Testing:** Option to enable autotest mode for automated topology testing.
 - **Integration with Mininet:** Utilizes Mininet and ComNetsEmu for network simulation and container management.
 
-## Digital Twin Network simulation
+## Digital Twin Network simulation.
 
 The [Digital_Twin](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Digital_Twin/digital_twin.py) emulates a "digital twin" network that mirrors the traffic patterns observed in a physical twin.
 
@@ -41,4 +41,5 @@ The [Digital_Twin](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/
 ## Results showing the different results.
 ![alt text](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/results/Screenshot%202024-09-04%20092646.png)
 
+## System design.
 ![alt text](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Image.jpg)
