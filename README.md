@@ -38,7 +38,7 @@ The [Digital_Twin](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/
 - **Digital twin setup**: The script sets up a Mininet-based "digital twin" that replicates the physical twin's network environment. The topology includes two hosts connected by two switches, designed to mirror the network infrastructure of the physical twin.
 - **Traffic emulation**: The captured network traffic from the physical train is replayed in the digital twin network.
 - **Traffic capture and analysis**: Network traffic in the digital twin is captured using `tcpdump` and saved to a pcap file. This allows for a detailed comparison and analysis of how closely the digital twin replicates the physical twin's network behavior.
-## Results showing the 
+## Results showing the different results.
 ![alt text](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/results/Screenshot%202024-09-04%20092646.png)
 
 ![alt text](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Image.jpg)
