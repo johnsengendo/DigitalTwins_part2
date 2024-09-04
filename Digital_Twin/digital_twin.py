@@ -12,7 +12,7 @@ print("Script started")
 """
 Loading the CSV data
 """
-csv_file = "predictions_with_bandwidth.csv"
+csv_file = "predictions_window_300_ahead_60.csv"
 
 """
 Ensuring the script and CSV file are in the same directory
@@ -110,33 +110,30 @@ Iterating over each row in the CSV file
 """
 print("Starting iperf tests")
 for index, row in data.iterrows():
-    bandwidth_bps = row['Bandwidth_bps']
-    protocol = row['Protocol']
+    packets_per_second = row['Predicted']
 
     """
-    Converting bandwidth from bps to Mbps for iperf (1 Mbps = 10^6 bps)
+    Calculating bandwidth from packets/second and packet size
     """
+    bandwidth_bps = packets_per_second * 1540.4859017313352 * 8
     bandwidth_mbps = bandwidth_bps / 1e6
 
     """
-    Adjusting the protocol if necessary (TCP or UDP)
+    Setting the protocol to TCP
     """
-    if protocol == 'TCP':
-        protocol_option = ''
-    else:
-        protocol_option = '-u'
+    protocol_option = ''
 
     """
     Running the iperf client on h1 with the specified bandwidth and protocol
     """
     iperf_command = f"iperf3 -c 10.0.0.2 {protocol_option} -b {bandwidth_mbps}M -t 1 -i 1 &"
     h1.cmd(iperf_command)
-    
+
     """
     Waiting for 1 second before running the next iperf command
     """
     time.sleep(1)
-    
+
     if index % 100 == 0:
         print(f"Completed {index} iperf tests")
 
