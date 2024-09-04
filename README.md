@@ -22,7 +22,7 @@ Key dependencies include `TensorFlow`, `Keras`, and `Scikit-learn`.
 
 ## Pysical Twin with Video Streaming application with Dynamic Network conditions.
 
-The [topology script](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Physical_Twin/network-topology-script.py)  sets up a video streaming application using Mininet and Containernet, simulating dynamic network conditions by varying bandwidth and delay in real-time. The setup includes server and client containers for video streaming, with network properties changing every 120 seconds. The script supports automatic testing and can be controlled via command-line arguments.
+The Pysical_Twin folder contains the general network setup where the [topology script](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Physical_Twin/network-topology-script.py)  sets up a video streaming application using Mininet and Containernet, simulating dynamic network conditions by varying bandwidth and delay of the bottleneck link in real-time. The setup includes server and client containers for video streaming, with network properties changing every 120 seconds.
 
 Key Features:
 - **Dynamic network simulation:** Adjusts bandwidth and delay to create variability in the network and as well to collect more data. Below is a table of different parameters used:
