@@ -13,13 +13,6 @@ Repository structure:
 - analysis/: Scripts and notebooks for analyzing pcap files.
 - predictions/: Predictive models and scripts for traffic prediction.
 - digital_twin/: Implementation of the digital twin replication.
-- 
-### Time-Series Prediction with CNN
-
-The script [time_series_cnn_prediction](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/predictions/time_series_cnn_prediction.py)leverages Convolutional Neural Networks (CNNs) for predicting time-series data, specifically focusing on packet-per-second metrics.  
-It preprocesses the data, trains multiple models with different window sizes and forecast horizons, and visualizes the results.  
-Key dependencies include `TensorFlow`, `Keras`, and `Scikit-learn`.
-
 ## Pysical Twin with Video Streaming application with Dynamic Network conditions.
 
 The Pysical_Twin folder contains the general network setup where the [topology script](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Physical_Twin/network-topology-script.py)  sets up a video streaming application using Mininet and Containernet, simulating dynamic network conditions by varying bandwidth and delay of the bottleneck link in real-time. The setup includes server and client containers for video streaming, with network properties changing every 120 seconds.
@@ -38,6 +31,11 @@ Key Features:
 ## Digital Twin Network simulation.
 
 The [Digital_Twin](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Digital_Twin/digital_twin.py) emulates a "digital twin" network that mirrors the traffic patterns observed in a physical twin.
+### Time-Series Prediction with CNN
+
+Within the predictions folder, different algorithims a tried out to generate predictions one of the promising is a [time_series_cnn_prediction](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/predictions/time_series_cnn_prediction.py) that leverages Convolutional Neural Networks (CNNs) for predicting time-series data, specifically focusing on packet-per-second metrics.  
+It preprocesses the data, trains multiple models with different window sizes and forecast horizons, and visualizes the results.  
+Key dependencies include `TensorFlow`, `Keras`, and `Scikit-learn`
 
 ### Overview:
 - **Physical twin data integration**: Traffic data captured from a physical twin is analysed and stored in a CSV file (`predictions_with_bandwidth.csv`). This data reflects the trasferred packets/Second in the physical twin.
