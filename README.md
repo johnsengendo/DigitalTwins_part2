@@ -20,7 +20,7 @@ The script [time_series_cnn_prediction](https://github.com/johnsengendo/DigitalT
 It preprocesses the data, trains multiple models with different window sizes and forecast horizons, and visualizes the results.  
 Key dependencies include `TensorFlow`, `Keras`, and `Scikit-learn`.
 
-### Video Streaming Application with Dynamic Network Conditions
+## Pysical Twin with Video Streaming application with Dynamic Network conditions
 
 The [topology script](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Physical_Twin/network-topology-script.py)  sets up a video streaming application using Mininet and Containernet, simulating dynamic network conditions by varying bandwidth and delay in real-time. The setup includes server and client containers for video streaming, with network properties changing every 120 seconds. The script supports automatic testing and can be controlled via command-line arguments.
 
