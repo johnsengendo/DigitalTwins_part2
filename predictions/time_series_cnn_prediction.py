@@ -40,12 +40,11 @@ from tensorflow.keras import optimizers
 from tensorflow.keras.losses import MAE
 
 # --------------------------------------------------------------
-# Google Drive Mounting (Optional)
+# Google Drive Mounting
 # --------------------------------------------------------------
-# Uncomment the following lines if you want to mount Google Drive
 
 # from google.colab import drive
-# drive.mount('yyyy')
+# drive.mount('/content/drive')
 
 # --------------------------------------------------------------
 # Data loading and initial plotting
@@ -81,7 +80,7 @@ val_dataset = data[split_index:]
 print(train_dataset.shape)
 print(val_dataset.shape)
 
-# Selecting the column 'packets_per_sec' as the feature for your model
+# Selecting the column 'packets_per_sec' as the feature for our model
 features = ['packets_per_sec']
 
 # Converting the training and validation data to NumPy arrays
@@ -119,7 +118,7 @@ ahead_values = [4, 30, 60, 120, 300, 360]
 
 def create_dataset_windowed(features, labels, ahead=4, window_size=1, max_window_size=500):
     """
-    Creates a dataset for time-series analysis with window-based features.
+    The fuction creates a dataset for time-series analysis with window-based features.
 
     Parameters:
     - features: Input data for the model.
@@ -146,7 +145,7 @@ def create_dataset_windowed(features, labels, ahead=4, window_size=1, max_window
 
 def PlotResults(labels, predictions, binsize=10):
     """
-    Plots the comparison between actual labels and predictions.
+    The function plots the comparison between actual labels and predictions.
     """
     fig = plt.figure(figsize=(16, 16))
     spec = gridspec.GridSpec(ncols=4, nrows=4, figure=fig)
@@ -159,7 +158,7 @@ def PlotResults(labels, predictions, binsize=10):
 
 def plot_history(history):
     """
-    Plots the training and validation history of the model.
+    The function plots the training and validation history of the model.
     """
     plt.figure(figsize=(6, 4))
     plt.xlabel('Epoch')
@@ -234,7 +233,7 @@ for WINDOW in window_sizes:
         # Storing the training history
         histories[WINDOW] = CNN_history.history
 
-        # Make predictions
+        # Making predictions
         y_train_CNNmodel = CNNmodel.predict(X_train_w)
         y_val_CNNmodel = CNNmodel.predict(X_val_w)
 
@@ -256,7 +255,7 @@ for WINDOW in window_sizes:
         print(f"Train MAE: {mae_train_CNNmodel}")
         print(f"Validation MAE: {mae_val_CNNmodel}")
 
-        # Save predictions to a CSV file
+        # Saving predictions to a CSV file
         predictions_df = pd.DataFrame({
             'Actual': r_val_w.flatten(),
             'Predicted': y_val_CNNmodel.flatten()
@@ -267,6 +266,6 @@ for WINDOW in window_sizes:
         PlotResults(r_val_w[:1000], y_val_CNNmodel[:1000, 0])
         plot_history(CNN_history)
 
-# Save the summary of results to a CSV file
+# Saving the summary of results to a CSV file
 results.to_csv(f'{folder_path}results_summary.csv', index=False)
 print("Loop stopped")
