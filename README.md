@@ -9,11 +9,12 @@ The process involves the following steps:
 
 Repository structure:
 
-- data/: Contains pcap files and related data.
-- analysis/: Scripts and notebooks for processing pcap files to extract out useful features.
-- predictions/: Predictive models and scripts for traffic prediction.
+- data/: Contains pcap files and etracted data from the pcap files.
+- analysis/:  Contains scripts and notebooks for processing pcap files to extract out useful features.
+- predictions/: Pre-trained models and scripts for traffic prediction.
 - digital_twin/: Implementation of the digital twin replication.
-## Pysical Twin with Video Streaming application with Dynamic Network conditions.
+
+##Pysical Twin with Video Streaming application with Dynamic Network conditions.
 
 The Pysical_Twin folder contains the general network setup where the [topology script](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Physical_Twin/network-topology-script.py)  sets up a video streaming application using Mininet and Containernet, simulating dynamic network conditions by varying bandwidth and delay of the bottleneck link in real-time. The setup includes server and client containers for video streaming, with network properties changing every 120 seconds.
 
