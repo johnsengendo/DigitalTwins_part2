@@ -10,7 +10,7 @@ The process involves the following steps:
 Repository structure:
 
 - data/: Contains pcap files and related data.
-- analysis/: Scripts and notebooks for analyzing pcap files.
+- analysis/: Scripts and notebooks for processing pcap files to extract out useful features.
 - predictions/: Predictive models and scripts for traffic prediction.
 - digital_twin/: Implementation of the digital twin replication.
 ## Pysical Twin with Video Streaming application with Dynamic Network conditions.
