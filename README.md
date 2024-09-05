@@ -23,10 +23,10 @@ Key Features:
 ![data](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Screenshot%202024-09-04%20103539.png)
 - **Automated testing:** Option to enable autotest mode for automated topology testing.
 - **Integration with Mininet:** Utilizing Mininet and ComNetsEmu for network simulation and container management.
-- Pcap_file captured: Beloww is a pcap file captured after streaming the a vedio application for 
+- Pcap_file captured: Beloww is a pcap file captured after streaming the a vedio application for 30 minutes.
 ![data](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Screenshot%202024-09-04%20112810.png)
 
-- Extracted features from the Pcap_file
+- Extracted features (packets_per_second) from the Pcap_file.
 ![data](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Screenshot%202024-09-04%20113955.png)
 
 ## Digital Twin Network simulation.
@@ -34,15 +34,10 @@ Key Features:
 The [Digital_Twin](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Digital_Twin/digital_twin.py) emulates a "digital twin" network that mirrors the traffic patterns observed in a physical twin.
 ### Time-Series Prediction with CNN
 
-Within the predictions folder, different algorithims a tried out to generate predictions one of the promising is a [time_series_cnn_prediction](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/predictions/time_series_cnn_prediction.py) that leverages Convolutional Neural Networks (CNNs) for predicting time-series data, specifically focusing on packet-per-second metrics.  
+Within the predictions folder, different algorithims are tried out to generate predictions one of the promising is a [time_series_cnn_prediction](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/predictions/time_series_cnn_prediction.py) that leverages Convolutional Neural Networks (CNNs) for predicting time-series data, specifically focusing on packet-per-second metrics.  
 It preprocesses the data, trains multiple models with different window sizes and forecast horizons, and visualizes the results.  
 Key dependencies include `TensorFlow`, `Keras`, and `Scikit-learn`
 
-### Overview:
-- **Physical twin data integration**: Traffic data captured from a physical twin is analysed and stored in a CSV file (`predictions_with_bandwidth.csv`). This data reflects the trasferred packets/Second in the physical twin.
-- **Digital twin setup**: The script sets up a Mininet-based "digital twin" that replicates the physical twin's network environment. The topology includes two hosts connected by two switches, designed to mirror the network infrastructure of the physical twin.
-- **Traffic emulation**: The captured network traffic from the physical train is replayed in the digital twin network.
-- **Traffic capture and analysis**: Network traffic in the digital twin is captured using `tcpdump` and saved to a pcap file. This allows for a detailed comparison and analysis of how closely the digital twin replicates the physical twin's network behavior.
 ## Results showing the different results.
 ![alt text](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/results/Screenshot%202024-09-04%20092646.png)
 
