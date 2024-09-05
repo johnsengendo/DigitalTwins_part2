@@ -16,14 +16,14 @@ Repository structure:
 
 ### Pysical Twin with Video Streaming application with Dynamic Network conditions.
 
-The Pysical_Twin folder contains the general network setup where the [topology script](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Physical_Twin/network-topology-script.py)  sets up a video streaming application using Mininet and Containernet, simulating dynamic network conditions by varying bandwidth and delay of the bottleneck link in real-time. The setup includes server and client containers for video streaming, with network properties changing every 120 seconds.
+The Pysical_Twin folder contains the general network setup where the [topology script](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Physical_Twin/network-topology-script.py) sets up a video streaming application using Mininet and Containernet, simulating dynamic network conditions by varying bandwidth and delay of the bottleneck link. The setup includes server and client containers for video streaming, with network properties (BW and Delay) changing every 120 seconds.
 
 Key Features:
-- **Dynamic network simulation:** Adjusts bandwidth and delay to create variability in the network and as well to collect more data. Below is a table of different parameters used:
+- **Dynamic network simulation:** Involves adjusting bandwidth and delay to create variability in the network and as well to collect more data. Below is a table of different values used:
 ![data](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Screenshot%202024-09-04%20103539.png)
 - **Automated testing:** Option to enable autotest mode for automated topology testing.
-- **Integration with Mininet:** Utilizes Mininet and ComNetsEmu for network simulation and container management.
-- Pcap_file captured
+- **Integration with Mininet:** Utilizing Mininet and ComNetsEmu for network simulation and container management.
+- Pcap_file captured: Beloww is a pcap file captured after streaming the a vedio application for 
 ![data](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Screenshot%202024-09-04%20112810.png)
 
 - Extracted features from the Pcap_file
