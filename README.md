@@ -34,7 +34,7 @@ Key Features:
 The [Digital_Twin](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Digital_Twin/digital_twin.py) emulates a "digital twin" network that mirrors the traffic patterns observed in a physical twin.
 ### Time-Series Prediction with CNN
 
-Within the predictions folder, different algorithims are tried out to generate predictions one of the promising is a [time_series_cnn_prediction](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/predictions/time_series_cnn_prediction.py) (which can be run via google colab) and [time_series_cnn_prediction](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/predictions/time_series_cnn_prediction.py)(which can be run locally) that leverages Convolutional Neural Networks (CNNs) for predicting time-series data, specifically focusing on packet-per-second metrics.  
+Within the predictions folder, different algorithims are tried out to generate predictions one of the promising is a [time_series_cnn_prediction](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/predictions/time_series_cnn_prediction.py) (which can be run via google colab) and [time_series_cnn](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/predictions/time_series_cnn.py)(which can be run locally) that leverages Convolutional Neural Networks (CNNs) for predicting time-series data, specifically focusing on packet-per-second metrics.  
 It preprocesses the data, trains multiple models with different window sizes and forecast horizons, and visualizes the results.  
 Key dependencies include `TensorFlow`, `Keras`, and `Scikit-learn`
 
