@@ -39,7 +39,10 @@ It preprocesses the data, trains multiple models with different window sizes and
 Key dependencies include `TensorFlow`, `Keras`, and `Scikit-learn`
 
 ## Results showing the different results.
-![alt text](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/results/Screenshot%202024-09-04%20092646.png)
+![alt text](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Screenshot%202024-09-06%20131235.png)
 ## Below as well are curves showing the predictions curves vs the true values.
+![alt text](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Screenshot%202024-09-06%20130413.png)
+![alt text](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Screenshot%202024-09-06%20130638.png)
+![alt text](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Screenshot%202024-09-06%20130750.png)
 ## System design.
 ![alt text](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Image.jpg)
