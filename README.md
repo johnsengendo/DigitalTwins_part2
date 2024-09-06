@@ -40,7 +40,7 @@ Key dependencies include `TensorFlow`, `Keras`, and `Scikit-learn`
 
 ## Results showing the different results.
 ![alt text](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Screenshot%202024-09-06%20131235.png)
-## Below as well are curves showing the predictions curves vs the true values.
+## Below are curves showing the predictions curves vs the true values.
 ## Window_size = 360 seconds and ahead = 360 seconds
 ![alt text](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Screenshot%202024-09-06%20130413.png)
 
