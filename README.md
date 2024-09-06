@@ -46,7 +46,7 @@ Key dependencies include `TensorFlow`, `Keras`, and `Scikit-learn`
 
 ## Window_size = 300 seconds and ahead = 60 seconds
 ![alt text](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Screenshot%202024-09-06%20130638.png)
-## Window_size = 360 seconds and ahead = 360 seconds
+## Window_size = 120 seconds and ahead = 4 seconds
 
 ![alt text](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Images/Screenshot%202024-09-06%20130750.png)
 ## System design.
