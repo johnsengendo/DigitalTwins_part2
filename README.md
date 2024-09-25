@@ -14,7 +14,7 @@ Repository structure:
 - predictions/: Pre-trained models and scripts for traffic prediction.
 - digital_twin/: Implementation of the digital twin replication.
 
-### Pysical Twin with Video Streaming application with Dynamic Network conditions.
+### Pysical Twin with Video Streaming application under Dynamic Network conditions.
 
 The Pysical_Twin folder contains the general network setup where the [topology script](https://github.com/johnsengendo/DigitalTwins_part2/blob/main/Physical_Twin/network-topology-script.py) sets up a video streaming application using Mininet and Containernet, simulating dynamic network conditions by varying bandwidth and delay of the bottleneck link. The setup includes server and client containers for video streaming, with network properties (BW and Delay) changing every 120 seconds.
 
