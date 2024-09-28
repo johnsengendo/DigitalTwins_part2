@@ -25,7 +25,7 @@ def stop_capture(pid):
 # Function to get the video stream from the remote server
 def get_video_stream():
     out_file = "stream_output.flv"
-    total_duration = 15 * 120  # 15 periods of 120 seconds each
+    total_duration = 30 * 120  # 15 periods of 120 seconds each
     capture_traffic = True
 
     # Starting traffic capture if the flag is True
