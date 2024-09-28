@@ -26,7 +26,7 @@ def main():
     # Setting the input video file, number of loops, total duration, and capture traffic flag
     input_file = "Video/Deadpool.mp4"
     loops_number = -1  # Streaming the video indefinitely
-    total_duration = 15 * 120  # 15 periods of 120 seconds each
+    total_duration = 30 * 120  # 15 periods of 120 seconds each
     capture_traffic = True
 
     # Starting traffic capture if the flag is True
