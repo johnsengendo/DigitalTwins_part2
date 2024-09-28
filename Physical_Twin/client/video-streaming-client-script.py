@@ -35,7 +35,7 @@ def get_video_stream():
     # Constructing the FFmpeg command
     ffmpeg_command = [
         "ffmpeg", "-loglevel", "info", "-stats", "-i", "rtmp://10.0.0.1:1935/live/video.flv",
-        "-t", str(total_duration), "-probesize", "80000", "-analyzeduration", "15", "-c:a", "copy", "-c:v", "copy", out_file
+        "-t", str(total_duration), "-probesize", "80000", "-analyzeduration", "30", "-c:a", "copy", "-c:v", "copy", out_file
     ]
 
     # Executing the FFmpeg command
