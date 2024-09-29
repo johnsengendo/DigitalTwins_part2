@@ -25,7 +25,7 @@ def stop_capture(pid):
 # Function to get the video stream from the remote server
 def get_video_stream():
     out_file = "stream_output.flv"
-    total_duration = 30 * 120  # 15 periods of 120 seconds each
+    total_duration = 20 * 120  # 20 periods of 120 seconds each
     capture_traffic = True
 
     # Starting traffic capture if the flag is True
@@ -35,7 +35,7 @@ def get_video_stream():
     # Constructing the FFmpeg command
     ffmpeg_command = [
         "ffmpeg", "-loglevel", "info", "-stats", "-i", "rtmp://10.0.0.1:1935/live/video.flv",
-        "-t", str(total_duration), "-probesize", "80000", "-analyzeduration", "30", "-c:a", "copy", "-c:v", "copy", out_file
+        "-t", str(total_duration), "-probesize", "80000", "-analyzeduration", "15", "-c:a", "copy", "-c:v", "copy", out_file
     ]
 
     # Executing the FFmpeg command
